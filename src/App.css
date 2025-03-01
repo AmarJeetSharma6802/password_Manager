@@ -219,6 +219,9 @@ color: black;
   .green {
       padding: 2px 10px;
 }
+.eyeicon {
+  right: 6px;
+}
 }
 @media (min-width:430px) and (max-width:600px) {
   .submit {
