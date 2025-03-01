@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
-import "./app.css";
+import './App.css'
 import passwordImg from "./assets/reset-password.png";
 
 function TodoList() {
