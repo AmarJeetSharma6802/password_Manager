@@ -60,6 +60,7 @@ function TodoList() {
     setName("");
       setUrl("");
       setPassword("");
+      toast.success("🦄 Password Store Succefully")
   };
 
   const handleDelete = (index) => {
@@ -71,7 +72,7 @@ function TodoList() {
     toast.error("password deleted")
   };
 
-  const notify = () => toast.success("🦄 Password Store Succefully");
+
 
   const handleEdit = (index) => {
     setName(todo[index].name);
@@ -153,7 +154,7 @@ function TodoList() {
               <div className="submit">
                 <img src={passwordImg} alt="" id="passimg" />
 
-                <button type="submit" onClick={notify}>
+                <button type="submit" >
                   {" "}
                   addPassword
                 </button>
