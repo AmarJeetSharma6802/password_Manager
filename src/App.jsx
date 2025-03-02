@@ -213,7 +213,9 @@ function TodoList() {
                     <ul>
                       <li>{item.url}</li>
                       <li>{item.name}</li>
-                      <li>{item.password}</li>
+                      {
+                        isvisiable? <li>{item.password}</li> :<li>******</li>
+                      }
                       <div className="dl">
                       <button
                     className="delete"
@@ -224,6 +226,17 @@ function TodoList() {
                   <button className="edit" onClick={() => handleEdit(index)}>
                     <i class="fa-solid fa-pencil"></i>
                   </button>
+                  <button><div className="eyeicon-2" onClick={passwordVisiableBtn}>
+                    {isvisiable ? (
+                      <span>
+                        <i className="fa-solid fa-eye"></i>
+                      </span>
+                    ) : (
+                      <span>
+                        <i className="fa-solid fa-eye-slash"></i>
+                      </span>
+                    )}
+                  </div></button>
                   </div>
                     </ul>
                   </div>
